@@ -4,8 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-
-// Does this Work ?
 public class Main {
 
 	public static void main(String[] args) {
@@ -96,6 +94,7 @@ public class Main {
 		System.out.println();
 		System.out.println("Here we see suitable course to responsible professors");
 		for (int i = 0; i < 2; i++) {
+			// Here we are making a new Object coursem but don't we need a ArrayList of courseM ? Look at the top!
 			CourseManagement coursem = new CourseManagement(courses.get(i), professors.get(i));
 			System.out.println("-----------------------------------------------------");
 			System.out.println(coursem.course.getCourseName() + " : " + coursem.professor.getFirstName() + " "
